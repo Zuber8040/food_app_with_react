@@ -44,7 +44,8 @@
   height: 50%;
 }
 
-.Search {
+.btn {
+  margin-left: 20px;
   padding: 10px;
 }
 

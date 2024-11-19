@@ -38,8 +38,9 @@
   width: 100%;
   height: 50%;
 }
-.Search {
+.btn {
   padding: 10px;
+  margin-left: 20px;
 }
 .res-container {
   display: flex;
