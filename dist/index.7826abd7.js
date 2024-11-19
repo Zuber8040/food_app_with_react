@@ -2940,67 +2940,22 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const Headers = ()=>{
+var _body = require("./src/components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _header = require("./src/components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "app",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "logo-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "logo",
-                    src: "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All",
-                    alt: "food logo app"
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 10,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 9,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 18,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About Us"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 19,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact Us"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 20,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 21,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "App.js",
-                    lineNumber: 17,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 16,
+                lineNumber: 10,
                 columnNumber: 13
             }, undefined)
         ]
@@ -3010,426 +2965,22 @@ const Headers = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_c = Headers;
-const resList = [
-    {
-        "card": {
-            "id": "363818",
-            "name": "Mani's Cafe",
-            "cloudinaryImageId": "607d383d03e670225c633c125d0973b2",
-            "locality": "Breach Candy",
-            "areaName": "Matunga Sion",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "South Indian",
-                "North Indian",
-                "Biryani"
-            ],
-            "avgRating": 4.6,
-            "parentId": "131857",
-            "avgRatingString": "4.6",
-            "totalRatingsString": "10K+",
-            "promoted": true,
-            "adTrackingId": "cid=21493096~p=2~adgrpid=21493096#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=363818~eid=9a602466-1e6d-4ea0-a805-3255c7c9893d~srvts=1731894093026~collid=80424",
-            "sla": {
-                "deliveryTime": 37,
-                "lastMileTravel": 7.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "7.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "555803",
-            "name": "Ayyappan Pure Veg",
-            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/5/7b5f291b-9c4a-4002-802e-8983b122a5a3_e3db988a-ca94-4871-a6e9-551e57dd67fb.JPG",
-            "locality": "Opp Sai Infotech Park",
-            "areaName": "Ghatkopar Vikhroli",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "South Indian",
-                "North Indian",
-                "Chinese",
-                "Beverages"
-            ],
-            "avgRating": 4.3,
-            "veg": true,
-            "parentId": "334392",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "1.4K+",
-            "sla": {
-                "deliveryTime": 34,
-                "lastMileTravel": 3.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "3.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "64396",
-            "name": "Sai Sunder",
-            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/8/17/abdff1d7-7929-4324-8ec0-341d262d3e5c_e6befd45-b53b-47f5-804d-1bee63eed787.jpg",
-            "locality": "Matunga East",
-            "areaName": "Matunga",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
-                "South Indian",
-                "Chinese",
-                "North Indian"
-            ],
-            "avgRating": 4.5,
-            "parentId": "175529",
-            "avgRatingString": "4.5",
-            "totalRatingsString": "6.8K+",
-            "promoted": true,
-            "adTrackingId": "cid=21492053~p=3~adgrpid=21492053#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=64396~eid=9cc6b0ba-86a3-4b1f-9b31-9b1db77e96e9~srvts=1731894093026~collid=80424",
-            "sla": {
-                "deliveryTime": 44,
-                "lastMileTravel": 8.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "40-45 mins",
-                "lastMileTravelString": "8.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "11952",
-            "name": "Maharana Kamath",
-            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/14/2a632f22-6eff-4bd0-a8d6-ac521b40437e_6b578918-64d8-4c01-a49d-7403da263736.jpg",
-            "locality": "Mumbai CST Area",
-            "areaName": "Mumbai CST Area",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "Street Food",
-                "North Indian",
-                "Chinese",
-                "Gujarati",
-                "South Indian",
-                "Beverages"
-            ],
-            "avgRating": 4.5,
-            "parentId": "129954",
-            "avgRatingString": "4.5",
-            "totalRatingsString": "39K+",
-            "sla": {
-                "deliveryTime": 34,
-                "lastMileTravel": 5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "5.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "408891",
-            "name": "Sainath Dosa Centre",
-            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/29/81eacb23-d424-4921-9aa8-8ad14f4e2d32_ff584e78-f589-4000-afc8-d44928e5a344.JPG",
-            "locality": "Bhandarkar Road",
-            "areaName": "Matunga Wadala",
-            "costForTwo": "\u20B9100 for two",
-            "cuisines": [
-                "Chinese",
-                "South Indian",
-                "Snacks"
-            ],
-            "avgRating": 4.4,
-            "veg": true,
-            "parentId": "175689",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "2.0K+",
-            "promoted": true,
-            "adTrackingId": "cid=21492019~p=4~adgrpid=21492019#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=408891~eid=1cb1edb6-41d6-4be3-9513-f9e59a8d90ba~srvts=1731894093026~collid=80424",
-            "sla": {
-                "deliveryTime": 47,
-                "lastMileTravel": 8.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "8.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "11240",
-            "name": "Thambbi",
-            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/10/28/d8c070a1-31e6-4f67-a2a4-f2201079d410_86a01a3a-e97f-4c70-9cfd-4cd96102e5f0.jpg",
-            "locality": "Near Smokin Joes",
-            "areaName": "Ghatkopar West",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "South Indian",
-                "Snacks",
-                "Thalis"
-            ],
-            "avgRating": 4.4,
-            "veg": true,
-            "parentId": "2527",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "12K+",
-            "sla": {
-                "deliveryTime": 37,
-                "lastMileTravel": 4.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "4.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "57825",
-            "name": "Vihara- International By Tunga",
-            "cloudinaryImageId": "rhuw9uquktbhqbw7jzmj",
-            "locality": "M.I.D.C",
-            "areaName": "Andheri East",
-            "costForTwo": "\u20B9450 for two",
-            "cuisines": [
-                "Indian",
-                "South Indian",
-                "Beverages"
-            ],
-            "avgRating": 4.5,
-            "veg": true,
-            "parentId": "472900",
-            "avgRatingString": "4.5",
-            "totalRatingsString": "27K+",
-            "promoted": true,
-            "adTrackingId": "cid=21492370~p=5~adgrpid=21492370#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=57825~eid=b7c0dad7-9785-4e56-b9f4-763e9de4a80e~srvts=1731894093026~collid=80424",
-            "sla": {
-                "deliveryTime": 58,
-                "lastMileTravel": 7.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "55-60 mins",
-                "lastMileTravelString": "7.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "479493",
-            "name": "R S Mani Cafe",
-            "cloudinaryImageId": "xafft6p3mjd24jcp8w1c",
-            "locality": "Govandi Railway Station",
-            "areaName": "GOVANDI MUMBAI, Greater Mumbai Ward-M/ E",
-            "costForTwo": "\u20B9149 for two",
-            "cuisines": [
-                "South Indian",
-                "Beverages"
-            ],
-            "avgRating": 4.2,
-            "parentId": "253181",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "249",
-            "sla": {
-                "deliveryTime": 38,
-                "lastMileTravel": 6.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "6.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "637571",
-            "name": "Annavel Hotel",
-            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/10/28/887a3474-2630-43b7-a81f-0957568126d2_2d219d01-e130-4b43-8d2e-90ae0372a5d6.JPG",
-            "locality": "Mukund nagar",
-            "areaName": "Matunga Wadala",
-            "costForTwo": "\u20B9500 for two",
-            "cuisines": [
-                "South Indian",
-                "Chinese",
-                "Biryani",
-                "Beverages"
-            ],
-            "avgRating": 4.4,
-            "parentId": "384888",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "50",
-            "sla": {
-                "deliveryTime": 40,
-                "lastMileTravel": 6.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "6.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    },
-    {
-        "card": {
-            "id": "67037",
-            "name": "Ayyappan Idli",
-            "cloudinaryImageId": "f9mmpwaif5rgwl2egyw0",
-            "locality": "Matunga East",
-            "areaName": "Matunga",
-            "costForTwo": "\u20B9500 for two",
-            "cuisines": [
-                "South Indian",
-                "Beverages"
-            ],
-            "avgRating": 4.4,
-            "parentId": "431058",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "13K+",
-            "sla": {
-                "deliveryTime": 38,
-                "lastMileTravel": 7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "7.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            }
-        }
-    }
-];
-console.log(resList[0]);
-const ResturantCardComponent = (props)=>{
-    console.log(props);
-    const { resData } = props;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res_card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "res_logo",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.card.cloudinaryImageId
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 346,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: resData.card.name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 348,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.card.cuisines
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 349,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.card.avgRating
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 350,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.card.deliveryTime
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 351,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: resData.card.costForTwo
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 352,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 344,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = ResturantCardComponent;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "Search",
-                children: "Search"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 362,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-container",
-                children: resList.map((res)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturantCardComponent, {
-                        resData: res
-                    }, res.card.id, false, {
-                        fileName: "App.js",
-                        lineNumber: 367,
-                        columnNumber: 25
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 363,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 361,
-        columnNumber: 9
-    }, undefined);
-};
-_c2 = Body;
-const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "app",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Headers, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 378,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 379,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 377,
-        columnNumber: 9
-    }, undefined);
-};
-_c3 = AppLayout;
+_c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.querySelector('#root'));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 385,
+    lineNumber: 16,
     columnNumber: 13
 }, undefined));
-var _c, _c1, _c2, _c3;
-$RefreshReg$(_c, "Headers");
-$RefreshReg$(_c1, "ResturantCardComponent");
-$RefreshReg$(_c2, "Body");
-$RefreshReg$(_c3, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Body":"8yaV8","./src/components/Header":"hsJbF"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -27847,6 +27398,531 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}]},["aQL8O","1swhO","2Ew96"], "2Ew96", "parcelRequire94c2")
+},{}],"8yaV8":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _resturantCard = require("./ResturantCard");
+var _resturantCardDefault = parcelHelpers.interopDefault(_resturantCard);
+var _mockData = require("../utiles/mockData");
+var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Search",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: (0, _mockDataDefault.default).map((res)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturantCardDefault.default), {
+                        resData: res
+                    }, res.card.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 11,
+                        columnNumber: 25
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./ResturantCard":"7LKZL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utiles/mockData":"50HJ5"}],"7LKZL":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$195a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$195a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constant = require("../utiles/constant");
+const ResturantCardComponent = (props)=>{
+    console.log(props);
+    const { resData } = props;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res_card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res_logo",
+                src: (0, _constant.CARD_LOGO_URL) + resData.card.cloudinaryImageId
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: resData.card.name
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.card.cuisines
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.card.avgRating
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.card.deliveryTime
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.card.costForTwo
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ResturantCard.js",
+        lineNumber: 8,
+        columnNumber: 9
+    }, undefined);
+};
+_c = ResturantCardComponent;
+exports.default = ResturantCardComponent;
+var _c;
+$RefreshReg$(_c, "ResturantCardComponent");
+
+  $parcel$ReactRefreshHelpers$195a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utiles/constant":"aKjEY"}],"aKjEY":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CARD_LOGO_URL", ()=>CARD_LOGO_URL);
+parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+const CARD_LOGO_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const LOGO_URL = "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"50HJ5":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const resList = [
+    {
+        "card": {
+            "id": "363818",
+            "name": "Mani's Cafe",
+            "cloudinaryImageId": "607d383d03e670225c633c125d0973b2",
+            "locality": "Breach Candy",
+            "areaName": "Matunga Sion",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "North Indian",
+                "Biryani"
+            ],
+            "avgRating": 4.6,
+            "parentId": "131857",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "10K+",
+            "promoted": true,
+            "adTrackingId": "cid=21493096~p=2~adgrpid=21493096#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=363818~eid=9a602466-1e6d-4ea0-a805-3255c7c9893d~srvts=1731894093026~collid=80424",
+            "sla": {
+                "deliveryTime": 37,
+                "lastMileTravel": 7.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "7.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "555803",
+            "name": "Ayyappan Pure Veg",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/5/7b5f291b-9c4a-4002-802e-8983b122a5a3_e3db988a-ca94-4871-a6e9-551e57dd67fb.JPG",
+            "locality": "Opp Sai Infotech Park",
+            "areaName": "Ghatkopar Vikhroli",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "South Indian",
+                "North Indian",
+                "Chinese",
+                "Beverages"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "parentId": "334392",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "1.4K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 3.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "3.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "64396",
+            "name": "Sai Sunder",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/8/17/abdff1d7-7929-4324-8ec0-341d262d3e5c_e6befd45-b53b-47f5-804d-1bee63eed787.jpg",
+            "locality": "Matunga East",
+            "areaName": "Matunga",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "South Indian",
+                "Chinese",
+                "North Indian"
+            ],
+            "avgRating": 4.5,
+            "parentId": "175529",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "6.8K+",
+            "promoted": true,
+            "adTrackingId": "cid=21492053~p=3~adgrpid=21492053#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=64396~eid=9cc6b0ba-86a3-4b1f-9b31-9b1db77e96e9~srvts=1731894093026~collid=80424",
+            "sla": {
+                "deliveryTime": 44,
+                "lastMileTravel": 8.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "8.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "11952",
+            "name": "Maharana Kamath",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/14/2a632f22-6eff-4bd0-a8d6-ac521b40437e_6b578918-64d8-4c01-a49d-7403da263736.jpg",
+            "locality": "Mumbai CST Area",
+            "areaName": "Mumbai CST Area",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Street Food",
+                "North Indian",
+                "Chinese",
+                "Gujarati",
+                "South Indian",
+                "Beverages"
+            ],
+            "avgRating": 4.5,
+            "parentId": "129954",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "39K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "408891",
+            "name": "Sainath Dosa Centre",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/29/81eacb23-d424-4921-9aa8-8ad14f4e2d32_ff584e78-f589-4000-afc8-d44928e5a344.JPG",
+            "locality": "Bhandarkar Road",
+            "areaName": "Matunga Wadala",
+            "costForTwo": "\u20B9100 for two",
+            "cuisines": [
+                "Chinese",
+                "South Indian",
+                "Snacks"
+            ],
+            "avgRating": 4.4,
+            "veg": true,
+            "parentId": "175689",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "2.0K+",
+            "promoted": true,
+            "adTrackingId": "cid=21492019~p=4~adgrpid=21492019#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=408891~eid=1cb1edb6-41d6-4be3-9513-f9e59a8d90ba~srvts=1731894093026~collid=80424",
+            "sla": {
+                "deliveryTime": 47,
+                "lastMileTravel": 8.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "45-50 mins",
+                "lastMileTravelString": "8.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "11240",
+            "name": "Thambbi",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/10/28/d8c070a1-31e6-4f67-a2a4-f2201079d410_86a01a3a-e97f-4c70-9cfd-4cd96102e5f0.jpg",
+            "locality": "Near Smokin Joes",
+            "areaName": "Ghatkopar West",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "South Indian",
+                "Snacks",
+                "Thalis"
+            ],
+            "avgRating": 4.4,
+            "veg": true,
+            "parentId": "2527",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "12K+",
+            "sla": {
+                "deliveryTime": 37,
+                "lastMileTravel": 4.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "4.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "57825",
+            "name": "Vihara- International By Tunga",
+            "cloudinaryImageId": "rhuw9uquktbhqbw7jzmj",
+            "locality": "M.I.D.C",
+            "areaName": "Andheri East",
+            "costForTwo": "\u20B9450 for two",
+            "cuisines": [
+                "Indian",
+                "South Indian",
+                "Beverages"
+            ],
+            "avgRating": 4.5,
+            "veg": true,
+            "parentId": "472900",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "27K+",
+            "promoted": true,
+            "adTrackingId": "cid=21492370~p=5~adgrpid=21492370#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=57825~eid=b7c0dad7-9785-4e56-b9f4-763e9de4a80e~srvts=1731894093026~collid=80424",
+            "sla": {
+                "deliveryTime": 58,
+                "lastMileTravel": 7.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "55-60 mins",
+                "lastMileTravelString": "7.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "479493",
+            "name": "R S Mani Cafe",
+            "cloudinaryImageId": "xafft6p3mjd24jcp8w1c",
+            "locality": "Govandi Railway Station",
+            "areaName": "GOVANDI MUMBAI, Greater Mumbai Ward-M/ E",
+            "costForTwo": "\u20B9149 for two",
+            "cuisines": [
+                "South Indian",
+                "Beverages"
+            ],
+            "avgRating": 4.2,
+            "parentId": "253181",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "249",
+            "sla": {
+                "deliveryTime": 38,
+                "lastMileTravel": 6.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "6.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "637571",
+            "name": "Annavel Hotel",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/10/28/887a3474-2630-43b7-a81f-0957568126d2_2d219d01-e130-4b43-8d2e-90ae0372a5d6.JPG",
+            "locality": "Mukund nagar",
+            "areaName": "Matunga Wadala",
+            "costForTwo": "\u20B9500 for two",
+            "cuisines": [
+                "South Indian",
+                "Chinese",
+                "Biryani",
+                "Beverages"
+            ],
+            "avgRating": 4.4,
+            "parentId": "384888",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "50",
+            "sla": {
+                "deliveryTime": 40,
+                "lastMileTravel": 6.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "6.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    },
+    {
+        "card": {
+            "id": "67037",
+            "name": "Ayyappan Idli",
+            "cloudinaryImageId": "f9mmpwaif5rgwl2egyw0",
+            "locality": "Matunga East",
+            "areaName": "Matunga",
+            "costForTwo": "\u20B9500 for two",
+            "cuisines": [
+                "South Indian",
+                "Beverages"
+            ],
+            "avgRating": 4.4,
+            "parentId": "431058",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "13K+",
+            "sla": {
+                "deliveryTime": 38,
+                "lastMileTravel": 7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "7.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            }
+        }
+    }
+];
+exports.default = resList;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hsJbF":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bfed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constant = require("../utiles/constant");
+const Headers = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: (0, _constant.LOGO_URL),
+                    alt: "food logo app"
+                }, void 0, false, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 6,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 14,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 15,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 16,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 17,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Header.js",
+        lineNumber: 4,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Headers;
+exports.default = Headers;
+var _c;
+$RefreshReg$(_c, "Headers");
+
+  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utiles/constant":"aKjEY"}]},["aQL8O","1swhO","2Ew96"], "2Ew96", "parcelRequire94c2")
 
 //# sourceMappingURL=index.7826abd7.js.map
