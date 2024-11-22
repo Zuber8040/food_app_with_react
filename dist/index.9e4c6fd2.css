@@ -45,6 +45,7 @@
 }
 
 .btn {
+  cursor: pointer;
   margin-left: 20px;
   padding: 10px;
 }
@@ -53,5 +54,18 @@
   flex-flow: wrap;
   gap: 10px;
   display: flex;
+}
+
+.shimeer_container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimeer_cards {
+  background-color: #f0f0f0;
+  width: 100px;
+  height: 300px;
+  margin: 20px;
+  padding: 0 20px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
