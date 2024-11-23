@@ -28,8 +28,8 @@
 
 .res_card {
   background-color: #f0f0f0;
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   margin-left: 20px;
   padding: 5px;
 }
@@ -46,13 +46,18 @@
 
 .btn {
   cursor: pointer;
-  margin-left: 20px;
-  padding: 10px;
+  margin-left: 10px;
+  font-size: 15px;
 }
 
 .res-container {
   flex-flow: wrap;
   gap: 10px;
+  display: flex;
+}
+
+.filter {
+  margin: 20px 10px;
   display: flex;
 }
 
@@ -67,5 +72,11 @@
   height: 300px;
   margin: 20px;
   padding: 0 20px;
+}
+
+.login_btn {
+  color: #000;
+  margin: 20px;
+  padding: 10px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

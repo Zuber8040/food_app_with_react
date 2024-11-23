@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 const Body = () => {
     const [restrauntList, setrestrauntList] = useState([]);
+    const [filterestrauant, setFilterestrauant] = useState([]);
     // const [data, setData] = useState([]);
+
+    const [searchText, setSearchText] = useState('');
 
     useEffect(() => {
         fetchData();
@@ -13,19 +16,33 @@ const Body = () => {
         const jsonData = await data.json();
         setrestrauntList(jsonData?.data?.cards[4]?.card?.card?.
             gridElements?.infoWithStyle?.restaurants)
+        setFilterestrauant(jsonData?.data?.cards[4]?.card?.card?.
+            gridElements?.infoWithStyle?.restaurants)
     }
 
     return restrauntList.length === 0 ? <Shimmer /> : (
-        <div className="body">
-            <button className="btn" onClick={() => {
-                const cusinesFilter = restrauntList.filter((res) => res.info.cuisines.includes("Beverages"));
-                setrestrauntList(cusinesFilter)
-            }} >Cuines</button>
+        <div className="body"   >
+            <div className="filter">
+                <div className="search">
+                    <input type="text" className="search_box" value={searchText} onChange={(e) => {
+                        setSearchText(e.target.value)
+                    }} />
+                    <button className="btn" onClick={() => {
+                        const searchedRestruant = restrauntList.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                        setFilterestrauant(searchedRestruant)
+                    }}>Search</button>
+                </div>
+                <button className="btn" onClick={() => {
+                    const cusinesFilter = restrauntList.filter((res) => res.info.cuisines.includes("Beverages"));
+                    // cusinesFilter.length === 6 ? setrestrauntList(cusinesFilter) : setrestrauntList(restrauntList)
+                    setrestrauntList(cusinesFilter)
+                }} >Cuines</button>
+            </div>
             <div className="res-container">
                 {/* Restruacnt Card */}
                 {
-                    restrauntList.map((res) => (
-                        <ResturantCardComponent key={res.id} resData={res} />
+                    filterestrauant.map((res) => (
+                        <ResturantCardComponent key={res.info.id} resData={res} />
                     ))
                 }
 
