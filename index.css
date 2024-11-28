@@ -76,4 +76,9 @@ a {
 }
 .spaceAround {
   margin: 20px 0;
+  padding: 10px;
+}
+.menu > ul > li {
+  margin-left: 50px;
+  margin-top: 10px;
 }

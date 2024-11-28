@@ -1,6 +1,7 @@
 import ResturantCardComponent from "./ResturantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 const Body = () => {
     const [restrauntList, setrestrauntList] = useState([]);
     const [filterestrauant, setFilterestrauant] = useState([]);
@@ -42,7 +43,7 @@ const Body = () => {
                 {/* Restruacnt Card */}
                 {
                     filterestrauant.map((res) => (
-                        <ResturantCardComponent key={res.info.id} resData={res} />
+                        <Link to={"/restraunt/" + res.info.id} key={res.info.id}><ResturantCardComponent resData={res} /></Link>
                     ))
                 }
 

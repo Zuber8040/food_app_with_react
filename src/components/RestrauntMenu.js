@@ -1,26 +1,47 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Shimmer from './Shimmer';
+import { MENU_API } from '../utiles/constant';
 
 const RestrauantMenu = () => {
-    const params = useParams();
-    console.log(params.resId)
+    const [resInfo, setResInfo] = useState(null);
+
+    const { resId } = useParams();
+
+
     useEffect(() => {
-        const data = {
-            'https://www.swiggy.com/city/mumbai/ganga-paradise-by-tunga-m-i-d-c-rest54662?restaurant_id='+param
-        }
+        fetchData();
     }, []);
+    const fetchData = async () => {
+        const data = await fetch(MENU_API + resId);
+        const json = await data.json();
+        console.log(json);
+        setResInfo(json.data);
+    }
+
+    if (resInfo === null) return (<Shimmer />);
+
+
+    const { cuisines, id
+        , name,
+        costForTwoMessage,
+        cloudinaryImageId } = resInfo?.cards[2]?.card?.card?.info
+
+    // console.log()
+
+    const { itemCards } = resInfo?.cards[4]?.
+        groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
+
+    console.log(itemCards)
+
     return (
         <div className='menu'>
-            <h1 className=' spaceAround nameofRes'>Hotel Name</h1>
-            <h2 className=' spaceAround cusines'>Cusinesins </h2>
-            <h2 className='spaceAround' >Price</h2>
+            <h1 className=' spaceAround nameofRes'>{name}</h1>
+            <h2 className=' spaceAround cusines'>{cuisines.join(',')} </h2>
+            <h2 className='spaceAround' >{costForTwoMessage}</h2>
             <h3 className=' spaceAround'>Menu</h3>
             <ul className='spaceAround'>
-                <li>Menu with price </li>
-                <li>Menu with price </li>
-                <li>Menu with price </li>
-                <li>Menu with price </li>
-
+                {itemCards.map(item => <li id={item.card.info.id}> {item.card.info.name}  -  {'Rs'}{item.card.info.price / 100 || item.card.info.defaultPrice / 100} </li>)}
             </ul>
         </div>
     )

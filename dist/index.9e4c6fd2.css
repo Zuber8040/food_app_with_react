@@ -86,5 +86,11 @@ a {
 
 .spaceAround {
   margin: 20px 0;
+  padding: 10px;
+}
+
+.menu > ul > li {
+  margin-top: 10px;
+  margin-left: 50px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
