@@ -32166,33 +32166,12 @@ class About extends (0, _react.Component) {
                     lineNumber: 20,
                     columnNumber: 17
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {}, void 0, false, {
-                    fileName: "src/components/About.js",
-                    lineNumber: 21,
-                    columnNumber: 17
-                }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
                     name: "Zuber Ustad (class) ",
                     location: "Navi Mumbai"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 22,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                    name: "Zuber (class) ",
-                    location: " Mumbai"
-                }, void 0, false, {
-                    fileName: "src/components/About.js",
-                    lineNumber: 23,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                    name: "Dope (class) ",
-                    location: " kharghar"
-                }, void 0, false, {
-                    fileName: "src/components/About.js",
-                    lineNumber: 24,
+                    lineNumber: 21,
                     columnNumber: 17
                 }, this)
             ]
@@ -32306,42 +32285,30 @@ class UserClass extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         this.state = {
-            count: 0,
-            count2: 1
+            userInfo: {
+                name: 'Dummy',
+                location: 'Default'
+            }
         };
-        console.log(this.props.name + 'Child Constructor');
     }
-    componentDidMount() {
-        console.log(this.props.name + "child Mount ");
+    async componentDidMount() {
+        //   https://api.github.com/users/USERNAME
+        const data = await fetch('https://api.github.com/users/Zuber8040');
+        const json = await data.json();
+        this.setState({
+            userInfo: json
+        });
     }
     render() {
-        const { name, location } = this.props;
-        const { count, count2 } = this.state;
-        console.log(this.props.name + 'Child render');
+        const { name, location, bio, avatar_url } = this.state.userInfo;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "user-card",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: [
-                        "Count is :",
-                        count
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/UserClass.js",
-                    lineNumber: 28,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        // Never update the state variable 
-                        this.setState({
-                            count: count + 1
-                        });
-                    },
-                    children: "Click to increase Counter"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: avatar_url
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 29,
+                    lineNumber: 32,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -32351,7 +32318,7 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 35,
+                    lineNumber: 33,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -32361,20 +32328,30 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 36,
+                    lineNumber: 34,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: " Contact : zuber_29"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 37,
+                    lineNumber: 35,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        " Bio :",
+                        bio
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 36,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 25,
+            lineNumber: 31,
             columnNumber: 13
         }, this);
     }
