@@ -2,18 +2,25 @@ import React from 'react';
 
 class UserClass extends React.Component {
 
+
+    // whenever     class load its constructor called  
+    // then render is ccalled then componentDidMount is called 
     constructor(props) {
         super(props)
         this.state = {
             count: 0,
             count2: 1,
         }
-
+        console.log(this.props.name + 'Child Constructor')
     }
 
+    componentDidMount() {
+        console.log(this.props.name + "child Mount ")
+    }
     render() {
         const { name, location } = this.props
         const { count, count2 } = this.state
+        console.log(this.props.name + 'Child render');
         return (
             <div className="user-card">
                 {/* <h1>Count is :{this.state.count}</h1>
