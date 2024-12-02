@@ -32486,23 +32486,16 @@ var _reactRouterDom = require("react-router-dom");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _constant = require("../utiles/constant");
+var _useRestrauntMenu = require("../utiles/useRestrauntMenu");
+var _useRestrauntMenuDefault = parcelHelpers.interopDefault(_useRestrauntMenu);
 var _s = $RefreshSig$();
 const RestrauantMenu = ()=>{
     _s();
-    const [resInfo, setResInfo] = (0, _react.useState)(null);
     const { resId } = (0, _reactRouterDom.useParams)();
-    (0, _react.useEffect)(()=>{
-        fetchData();
-    }, []);
-    const fetchData = async ()=>{
-        const data = await fetch((0, _constant.MENU_API) + resId);
-        const json = await data.json();
-        console.log(json);
-        setResInfo(json.data);
-    };
+    const resInfo = (0, _useRestrauntMenuDefault.default)(resId);
     if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestrauntMenu.js",
-        lineNumber: 22,
+        lineNumber: 13,
         columnNumber: 35
     }, undefined);
     const { cuisines, id, name, costForTwoMessage, cloudinaryImageId } = resInfo?.cards[2]?.card?.card?.info;
@@ -32517,7 +32510,7 @@ const RestrauantMenu = ()=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestrauntMenu.js",
-                lineNumber: 39,
+                lineNumber: 30,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -32528,7 +32521,7 @@ const RestrauantMenu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestrauntMenu.js",
-                lineNumber: 40,
+                lineNumber: 31,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -32536,7 +32529,7 @@ const RestrauantMenu = ()=>{
                 children: costForTwoMessage
             }, void 0, false, {
                 fileName: "src/components/RestrauntMenu.js",
-                lineNumber: 41,
+                lineNumber: 32,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -32544,7 +32537,7 @@ const RestrauantMenu = ()=>{
                 children: "Menu"
             }, void 0, false, {
                 fileName: "src/components/RestrauntMenu.js",
-                lineNumber: 42,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -32561,24 +32554,25 @@ const RestrauantMenu = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestrauntMenu.js",
-                        lineNumber: 44,
+                        lineNumber: 35,
                         columnNumber: 40
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestrauntMenu.js",
-                lineNumber: 43,
+                lineNumber: 34,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestrauntMenu.js",
-        lineNumber: 38,
+        lineNumber: 29,
         columnNumber: 9
     }, undefined);
 };
-_s(RestrauantMenu, "Di9ZLy8XXUjRliClMcx4U9YqD/w=", false, function() {
+_s(RestrauantMenu, "KWqNOLsw3QZDtumBLFszU7SlldU=", false, function() {
     return [
-        (0, _reactRouterDom.useParams)
+        (0, _reactRouterDom.useParams),
+        (0, _useRestrauntMenuDefault.default)
     ];
 });
 _c = RestrauantMenu;
@@ -32591,6 +32585,40 @@ $RefreshReg$(_c, "RestrauantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj","../utiles/constant":"aKjEY"}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj","../utiles/constant":"aKjEY","../utiles/useRestrauntMenu":"lyadr"}],"lyadr":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$b54c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b54c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _constant = require("../utiles/constant");
+var _s = $RefreshSig$();
+const useRestrauntMenu = (resId)=>{
+    _s();
+    const [resInfo, setResInfo] = (0, _react.useState)(null);
+    // fetch data 
+    (0, _react.useEffect)(()=>{
+        fetchData();
+    }, []);
+    const fetchData = async ()=>{
+        const data = await fetch((0, _constant.MENU_API) + resId);
+        const json = await data.json();
+        setResInfo(json.data);
+    };
+    return resInfo;
+};
+_s(useRestrauntMenu, "hwGjLfSdFvMgUl5xpwSM0SJv98A=");
+exports.default = useRestrauntMenu;
+
+  $parcel$ReactRefreshHelpers$b54c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","../utiles/constant":"aKjEY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
 
 //# sourceMappingURL=index.7826abd7.js.map
