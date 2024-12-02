@@ -2,6 +2,7 @@ import ResturantCardComponent from "./ResturantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utiles/useOnlineStatus";
 const Body = () => {
     const [restrauntList, setrestrauntList] = useState([]);
     const [filterestrauant, setFilterestrauant] = useState([]);
@@ -20,6 +21,10 @@ const Body = () => {
         setFilterestrauant(jsonData?.data?.cards[4]?.card?.card?.
             gridElements?.infoWithStyle?.restaurants)
     }
+
+    const onelineStatus = useOnlineStatus();
+    if (onelineStatus === false)
+        return <h1>Looks like you're offline || Please check your internet check</h1>
 
     return restrauntList.length === 0 ? <Shimmer /> : (
         <div className="body"   >
