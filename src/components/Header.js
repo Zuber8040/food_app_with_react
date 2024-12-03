@@ -6,8 +6,8 @@ const Headers = () => {
     const [loginBtn, setLoginBtn] = useState('Login');
     const oneStatus = useOnlineStatus();
     return (
-        <div className="header">
-            <div className="logo-container">
+        <div className="flex justify-between ">
+            <div className="w-40">
                 <img
                     className="logo"
                     src={LOGO_URL}
@@ -15,7 +15,7 @@ const Headers = () => {
                 />
             </div>
             <div className="nav-items">
-                <ul>
+                <ul className="flex p-4 m-4 gap-5">
                     <li>Online Status : {oneStatus ? "✅" : "🔴"}</li>
                     <li> <Link to='/'>Home</Link></li>
                     <li><Link to='/about'>About Us</Link></li>
