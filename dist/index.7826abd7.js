@@ -2970,28 +2970,30 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 13,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 14,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 12,
+        lineNumber: 15,
         columnNumber: 9
     }, undefined);
 };
 _c = AppLayout;
+const Grocery = /*#__PURE__*/ (0, _react.lazy)(()=>require("93dde595651ca4f4"));
+_c1 = Grocery;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: '/',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 22,
+            lineNumber: 28,
             columnNumber: 18
         }, undefined),
         children: [
@@ -2999,7 +3001,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: '/',
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 26,
+                    lineNumber: 32,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3007,7 +3009,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: '/about',
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 30,
+                    lineNumber: 36,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3015,7 +3017,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: '/contact',
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 34,
+                    lineNumber: 40,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3023,14 +3025,38 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: '/restraunt/:resId',
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrauntMenuDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 38,
+                    lineNumber: 44,
                     columnNumber: 26
+                }, undefined)
+            },
+            {
+                path: '/grocery',
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Loading...."
+                    }, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 48,
+                        columnNumber: 47
+                    }, void 0),
+                    children: [
+                        "  ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 48,
+                            columnNumber: 71
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "App.js",
+                    lineNumber: 48,
+                    columnNumber: 27
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 42,
+            lineNumber: 52,
             columnNumber: 23
         }, undefined)
     }
@@ -3040,18 +3066,19 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 47,
+    lineNumber: 57,
     columnNumber: 13
 }, undefined));
-var _c;
+var _c, _c1;
 $RefreshReg$(_c, "AppLayout");
+$RefreshReg$(_c1, "Grocery");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/components/Body":"8yaV8","./src/components/Header":"hsJbF","react-router-dom":"9xmpe","./src/components/About":"9R1Eu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Error":"kvula","./src/components/Contact":"cgAOG","./src/components/RestrauntMenu":"7iKV5"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/components/Body":"8yaV8","./src/components/Header":"hsJbF","react-router-dom":"9xmpe","./src/components/About":"9R1Eu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Error":"kvula","./src/components/Contact":"cgAOG","./src/components/RestrauntMenu":"7iKV5","93dde595651ca4f4":"iBB5Y"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -32041,7 +32068,7 @@ exports.default = useOnlineStatus;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hsJbF":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hsJbF":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32140,10 +32167,24 @@ const Headers = ()=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "grocery",
+                                children: "Grocery"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 23,
+                                columnNumber: 25
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 23,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 24,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -32154,7 +32195,7 @@ const Headers = ()=>{
                             children: loginBtn
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 24,
+                            lineNumber: 25,
                             columnNumber: 21
                         }, undefined)
                     ]
@@ -32684,6 +32725,109 @@ exports.default = useRestrauntMenu;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","../utiles/constant":"aKjEY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
+},{"react":"21dqq","../utiles/constant":"aKjEY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iBB5Y":[function(require,module,exports,__globalThis) {
+module.exports = require("eb0b99718b9e5896")(require("a56b6f0914b6a17f").getBundleURL('lly8x') + "GroceryOnline.28d31627.js").catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root('5qmGV'));
+
+},{"eb0b99718b9e5896":"61B45","a56b6f0914b6a17f":"lgJ39","5qmGV":"5qmGV"}],"61B45":[function(require,module,exports,__globalThis) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName('script');
+        if ([].concat(existingScripts).some(function(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement('link');
+        preloadLink.href = bundle;
+        preloadLink.rel = 'preload';
+        preloadLink.as = 'script';
+        document.head.appendChild(preloadLink);
+        var script = document.createElement('script');
+        script.async = true;
+        script.type = 'text/javascript';
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName('head')[0].appendChild(script);
+    });
+});
+
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports,__globalThis) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case 'preload':
+            return cachedPreloads;
+        case 'prefetch':
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
 
 //# sourceMappingURL=index.7826abd7.js.map
