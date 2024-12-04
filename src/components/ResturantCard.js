@@ -5,11 +5,12 @@ const ResturantCardComponent = (props) => {
     const { resData } = props;
 
     return (
-        <div className="res_card" >
-
-            <img className="res_logo" src={CARD_LOGO_URL + resData.info.cloudinaryImageId
+        <div className="res_card  m-4 p-4 w-[250px] rounded-lg   " style={{
+            backgroundColor: '#f0f0f0'
+        }} >
+            <img className="rounded-lg w-full h-40 object-cover" src={CARD_LOGO_URL + resData.info.cloudinaryImageId
             } />
-            <h3>{resData.info.name}</h3>
+            <h3 className="font-bold py-4" >{resData.info.name}</h3>
             <h4>{resData.info.cuisines}</h4>
             <h4>{resData.info.avgRating}</h4>
             <h4>{resData.info.deliveryTime}</h4>

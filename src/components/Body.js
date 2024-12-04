@@ -28,23 +28,26 @@ const Body = () => {
 
     return restrauntList.length === 0 ? <Shimmer /> : (
         <div className="body"   >
-            <div className="filter">
-                <div className="search">
-                    <input type="text" className="search_box" value={searchText} onChange={(e) => {
+            <div className="flex">
+                <div className="search p-4 m-4 ">
+                    <input type="text" className="border border-solid border-black " value={searchText} onChange={(e) => {
                         setSearchText(e.target.value)
                     }} />
-                    <button className="btn" onClick={() => {
+                    <button className="btn bg-green-100 m-4 px-4 py-2  rounded-lg" onClick={() => {
                         const searchedRestruant = restrauntList.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                         setFilterestrauant(searchedRestruant)
                     }}>Search</button>
                 </div>
-                <button className="btn" onClick={() => {
-                    const cusinesFilter = restrauntList.filter((res) => res.info.cuisines.includes("Beverages"));
-                    // cusinesFilter.length === 6 ? setrestrauntList(cusinesFilter) : setrestrauntList(restrauntList)
-                    setrestrauntList(cusinesFilter)
-                }} >Cuines</button>
+                <div className="search p-4 m-4 flex items-center ">
+                    <button className="px-4 py-2 bg-gray-100 rounded-lg" onClick={() => {
+                        const cusinesFilter = restrauntList.filter((res) => res.info.cuisines.includes("Beverages"));
+                        // cusinesFilter.length === 6 ? setrestrauntList(cusinesFilter) : setrestrauntList(restrauntList)
+                        setrestrauntList(cusinesFilter)
+                    }} >Cuines</button>
+                </div>
+
             </div>
-            <div className="res-container">
+            <div className="res-container flex flex-wrap" >
                 {/* Restruacnt Card */}
                 {
                     filterestrauant.map((res) => (
