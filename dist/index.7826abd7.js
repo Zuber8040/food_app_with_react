@@ -27490,17 +27490,14 @@ const ResturantCardComponent = (props)=>{
     // console.log("Proopss", props);
     const { resData } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res_card  m-4 p-4 w-[250px] rounded-lg   ",
-        style: {
-            backgroundColor: '#f0f0f0'
-        },
+        className: "res_card  m-4 p-4 w-[250px] rounded-lg  bg-gray-200 hover:bg-gray-900  hover:text-white  ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "rounded-lg w-full h-40 object-cover",
                 src: (0, _constant.CARD_LOGO_URL) + resData.info.cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.js",
-                lineNumber: 11,
+                lineNumber: 9,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -27508,35 +27505,35 @@ const ResturantCardComponent = (props)=>{
                 children: resData.info.name
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.js",
-                lineNumber: 13,
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: resData.info.cuisines
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.js",
-                lineNumber: 14,
+                lineNumber: 12,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: resData.info.avgRating
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.js",
-                lineNumber: 15,
+                lineNumber: 13,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: resData.info.deliveryTime
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.js",
-                lineNumber: 16,
+                lineNumber: 14,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: resData.info.costForTwo
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.js",
-                lineNumber: 17,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined)
         ]
