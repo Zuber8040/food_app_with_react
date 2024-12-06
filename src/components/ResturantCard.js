@@ -1,7 +1,7 @@
 import { CARD_LOGO_URL } from "../utiles/constant";
 
 const ResturantCardComponent = (props) => {
-    // console.log("Proopss", props);
+    console.log("Proopss", props);
     const { resData } = props;
 
     return (
