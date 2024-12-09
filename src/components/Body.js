@@ -1,8 +1,9 @@
-import ResturantCardComponent from "./ResturantCard";
+import ResturantCardComponent, { withPromotedLable } from "./ResturantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utiles/useOnlineStatus";
+
 const Body = () => {
     const [restrauntList, setrestrauntList] = useState([]);
     const [filterestrauant, setFilterestrauant] = useState([]);
@@ -21,6 +22,7 @@ const Body = () => {
         setFilterestrauant(jsonData?.data?.cards[4]?.card?.card?.
             gridElements?.infoWithStyle?.restaurants)
     }
+    const PromotedLable = withPromotedLable(ResturantCardComponent);
 
     const onelineStatus = useOnlineStatus();
     if (onelineStatus === false)
@@ -51,8 +53,17 @@ const Body = () => {
                 {/* Restruacnt Card */}
                 {
                     filterestrauant.map((res) => (
-                        <Link to={"/restraunt/" + res.info.id} key={res.info.id}><ResturantCardComponent resData={res} /></Link>
+                        <Link to={"/restraunt/" + res.info.id} key={res.info.id}>
+
+                            {/* If the restruant is promoted above below 4.5 rating will be tagrte as promoted label */}
+
+                            {
+                                res.info.avgRating <= 4.5 ? (<PromotedLable resData={res} />) : (<ResturantCardComponent resData={res} />)
+                            }
+                        </Link>
+
                     ))
+
                 }
 
             </div>
